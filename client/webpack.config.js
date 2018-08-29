@@ -39,7 +39,7 @@ plugins.push(
 let SERVICE_URL = JSON.stringify('http://localhost:3000');
 if(process.env.NODE_ENV == 'production') {
 
-    SERVICE_URL = JSON.stringify('http://localhost:5000');
+    SERVICE_URL = JSON.stringify('http://endereco-servidor-api');
     plugins.push(new webpack.optimize.ModuleConcatenationPlugin());
     plugins.push(new babiliPlugin());    
     
